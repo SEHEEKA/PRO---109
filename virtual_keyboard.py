@@ -48,7 +48,13 @@ def countFingers(image, hand_landmarks, handNo=0):
         totalFingers = fingers.count(1)
         
         # PLAY or PAUSE a Video
-        
+        if totalFingers == 4:
+            state = "Play"
+
+        if totalFingers == 0 and state == "Play":
+            state = "Pause"
+            keyboard.press(Key.space)
+
         # Move Video FORWARD & BACKWARDS    
         
         
