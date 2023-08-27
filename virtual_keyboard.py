@@ -56,7 +56,7 @@ def countFingers(image, hand_landmarks, handNo=0):
             keyboard.press(Key.space)
 
         # Move Video FORWARD & BACKWARDS    
-        
+        finger_tip_x = (landmarks[8].x)*width
         
 # Define a function to 
 def drawHandLanmarks(image, hand_landmarks):
